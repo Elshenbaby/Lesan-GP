@@ -1,0 +1,288 @@
+{
+  "menu": {
+    "how": "From one spoken word to a daily plan",
+    "check": "2-minute check for your child",
+    "therapists": "Supervise more children between sessions",
+    "about": "The team and the research",
+    "privacy": "Consent, safety and your data",
+    "signup": "Create a free account"
+  },
+  "footer": {
+    "blurb": "Lisan screens children for lisps in Egyptian Arabic and guides daily practice at home, under a speech therapist's supervision."
+  },
+  "home": {
+    "hook": "Does your child say “thamaka” instead of “samaka”?",
+    "title": "Help your child say S right",
+    "subtitle": "A playful AI speech coach that listens, finds the tricky sounds and turns practice into a 10-minute daily adventure.",
+    "ctaPrimary": "Start free check",
+    "ctaSecondary": "How it works",
+    "continue": "Start the check",
+    "scroll": "Scroll",
+    "problemEyebrow": "Why Lisan",
+    "problemTitle": "Lisps are common and very treatable — but practice is hard to sustain.",
+    "problems": {
+      "access": {
+        "title": "Few therapists",
+        "body": "Speech therapists are concentrated in big cities; sessions are costly and weekly at best."
+      },
+      "practice": {
+        "title": "The practice gap",
+        "body": "Progress comes from daily repetition at home, but parents can't tell if the sound was right."
+      },
+      "late": {
+        "title": "Noticed late",
+        "body": "Many lisps are dismissed as “cute” and become harder to correct with time."
+      },
+      "arabic": {
+        "title": "Arabic is missing",
+        "body": "Most speech apps are English-only. Egyptian س ز ش ص are barely covered."
+      }
+    },
+    "stepsEyebrow": "Three steps",
+    "stepsTitle": "Check, plan, practice.",
+    "steps": {
+      "check": {
+        "title": "Check",
+        "body": "Your child names ~30 pictures in a short game. Lisan listens to every target sound."
+      },
+      "plan": {
+        "title": "Plan",
+        "body": "You get a clear result and a step-by-step plan your therapist can review and approve."
+      },
+      "practice": {
+        "title": "Practice",
+        "body": "10 minutes a day with a friendly guide, instant feedback and rewards."
+      }
+    },
+    "videoEyebrow": "Demo",
+    "videoTitle": "See Lisan in 90 seconds",
+    "videoCaption": "Demo video coming soon — recorded with our pilot families.",
+    "usersEyebrow": "One app, three views",
+    "usersTitle": "Everyone sees what they need.",
+    "users": {
+      "child": {
+        "title": "Child",
+        "body": "A game world with a guide, voice prompts, stars and badges. Never a score."
+      },
+      "parent": {
+        "title": "Parent",
+        "body": "Results in plain language, the daily plan, streaks and weekly progress."
+      },
+      "therapist": {
+        "title": "Speech therapist",
+        "body": "Patient list, recordings, accuracy per sound, plan approval and notes."
+      }
+    },
+    "ladderEyebrow": "The therapy ladder",
+    "ladderTitle": "One sound at a time, from “sss” to free talk.",
+    "ladderBody": "Every plan walks the same proven ladder. Children move up after ~80% accuracy across two sessions — and only a therapist can skip a level.",
+    "testimonialsEyebrow": "Pilot families",
+    "testimonialsTitle": "Small voices, big steps.",
+    "testimonials": [
+      {
+        "quote": "Youssef asks to play Samsam every evening. We hear the S coming back in his words.",
+        "name": "Mona, mother of Youssef (6)"
+      },
+      {
+        "quote": "For the first time I know whether he said it right — and what to do next.",
+        "name": "Ahmed, father of Omar (7)"
+      },
+      {
+        "quote": "I can review a whole week of practice in ten minutes before our session.",
+        "name": "Speech therapist, Cairo"
+      }
+    ],
+    "testimonialsNote": "Placeholder quotes until the pilot runs.",
+    "ctaTitle": "Ready to listen together?",
+    "ctaBody": "The free check takes two minutes and needs no account."
+  },
+  "how": {
+    "eyebrow": "How it works",
+    "title": "From one spoken word to the right next exercise.",
+    "intro": "Because the app always shows a known word, Lisan doesn't need general speech recognition — it only checks whether one expected sound was said correctly. That makes it accurate and explainable.",
+    "screening": {
+      "title": "1 · The screening game",
+      "body": "A picture appears, the guide asks “What is this?”, and your child says the word. About 30 pictures cover س and ز at the start, middle and end of words. No right or wrong is shown — just stars for trying."
+    },
+    "ai": {
+      "title": "2 · The AI analysis",
+      "body": "Each recording goes through a short pipeline. When the model isn't sure, it asks the child to say it again instead of guessing.",
+      "pipeline": {
+        "clean": { "title": "Clean", "body": "Noise reduction and voice detection." },
+        "align": { "title": "Align", "body": "Find exactly where the س is in the word." },
+        "classify": {
+          "title": "Classify",
+          "body": "Correct, interdental, dentalized, lateral or palatal — with confidence."
+        },
+        "dsp": { "title": "Explain", "body": "Signal features: a clear س has most energy at 4–8 kHz." },
+        "score": { "title": "Score", "body": "Accuracy per sound and position → severity." }
+      }
+    },
+    "plan": {
+      "title": "3 · The plan",
+      "body": "Results become a plan on the therapy ladder. Severity sets the pace, and the lisp type picks the warm-ups.",
+      "bands": {
+        "typical": "85% and above — short check-in plan, 2–3 weeks",
+        "moderate": "50–84% — full plan, about 6–10 weeks",
+        "severe": "Below 50% — full plan + in-person therapist visit"
+      }
+    },
+    "practice": {
+      "title": "4 · Daily practice",
+      "body": "Each day unlocks a short quest: a mouth warm-up, sound practice, a word game, a story or song. A correct sound fills the meter and the guide celebrates; a miss gets a gentle “Let's try with teeth closed” and a model sound."
+    },
+    "faqTitle": "Questions parents ask",
+    "faq": [
+      {
+        "q": "Is this a diagnosis?",
+        "a": "No. Lisan is screening and guided practice. Every report says to confirm with a speech therapist."
+      },
+      {
+        "q": "How long does it take each day?",
+        "a": "Sessions are 5–10 minutes. Short and daily works better than long and weekly."
+      },
+      {
+        "q": "What happens to the recordings?",
+        "a": "They are encrypted, linked to an anonymous ID, and you can delete them at any time."
+      },
+      {
+        "q": "What age is it for?",
+        "a": "Built for children, but teens and adults can use the same practice engine without the game layer."
+      }
+    ]
+  },
+  "check": {
+    "eyebrow": "Free lisp check",
+    "title": "Two minutes. No account.",
+    "intro": "Answer a few questions, then let your child say five words. You'll get a quick indication — the full screening is in the app.",
+    "steps": { "questions": "Questions", "voice": "Voice test", "result": "Result" },
+    "age": "How old is your child?",
+    "ageUnit": "years",
+    "concernsLabel": "What have you noticed?",
+    "concerns": {
+      "s_sounds_like_th": "S sounds like TH (thamaka instead of samaka)",
+      "tongue_out": "Tongue comes out between the teeth",
+      "slushy": "Sounds are “slushy” or wet",
+      "teased": "Others comment on or tease their speech",
+      "unsure": "I'm not sure, I just want to check"
+    },
+    "soundsLabel": "Which sounds seem hard?",
+    "therapyLabel": "Has your child seen a speech therapist before?",
+    "yes": "Yes",
+    "no": "No",
+    "voiceTitle": "Now let your child say each word",
+    "voiceHint": "Tap the microphone, say the word, then tap again. No microphone? You can skip.",
+    "wordOf": "Word {{n}} of {{total}}",
+    "tapToRecord": "Tap to record",
+    "recording": "Listening…",
+    "recorded": "Got it!",
+    "skip": "Skip",
+    "finish": "See result",
+    "analyzing": "Listening carefully…",
+    "resultTitle": {
+      "low": "Probably nothing to worry about",
+      "possible": "Worth a closer look",
+      "likely": "A full screening is recommended"
+    },
+    "soundsToCheck": "Sounds to check",
+    "fullScreening": "Get the full screening in the app",
+    "restart": "Start again",
+    "micDenied": "We couldn't use the microphone. You can still skip the voice test."
+  },
+  "therapists": {
+    "eyebrow": "For speech therapists",
+    "title": "Supervise more children, between sessions.",
+    "intro": "Lisan gives every child structured daily practice — and gives you a clear window into it.",
+    "benefits": {
+      "monitor": {
+        "title": "One dashboard",
+        "body": "See who is practising, who is stuck and who is ready for the next level."
+      },
+      "review": {
+        "title": "Review recordings",
+        "body": "Listen to flagged attempts and confirm or correct the AI's label. Your corrections improve the model."
+      },
+      "plans": {
+        "title": "Approve plans",
+        "body": "Change target sounds, exercises and pace. Only you can skip a level."
+      },
+      "prep": {
+        "title": "Session prep",
+        "body": "Read the weekly summary and hear the best and worst attempts before a visit."
+      }
+    },
+    "previewTitle": "Your week at a glance",
+    "partnerTitle": "Join as a partner",
+    "partnerBody": "We're looking for clinics to help label data, review plans and run the pilot.",
+    "form": {
+      "name": "Your name",
+      "email": "Work email",
+      "clinic": "Clinic or hospital",
+      "message": "Anything we should know?",
+      "submit": "Send request",
+      "sent": "Thanks! We'll be in touch."
+    }
+  },
+  "about": {
+    "eyebrow": "About the project",
+    "title": "A graduation project with a real-world goal.",
+    "intro": "Lisan (لسان, “tongue”) is built by a team of students, with a supervisor and clinical partners, to make lisp treatment reachable for every Egyptian family.",
+    "teamTitle": "The team",
+    "roles": {
+      "ai": {
+        "title": "AI / speech lead",
+        "body": "Alignment, classifier training, evaluation, DSP features"
+      },
+      "backend": { "title": "Backend lead", "body": "Django API, database, jobs, plan engine, deployment" },
+      "frontend": {
+        "title": "App / frontend lead",
+        "body": "Child and parent apps, website, therapist dashboard"
+      },
+      "ux": {
+        "title": "UX + clinical lead",
+        "body": "Game design, guide character, word lists, clinic relationship, ethics"
+      },
+      "agent": { "title": "Agent + data", "body": "AI agent prompts and tools, data collection and labeling" }
+    },
+    "memberPlaceholder": "Team member",
+    "academicTitle": "University & supervision",
+    "academicBody": "Faculty, department and supervisor details go here.",
+    "partnersTitle": "Research partners",
+    "partnersBody": "We're partnering with a clinic to record and label training data with therapist oversight.",
+    "ethicsTitle": "Privacy & ethics",
+    "ethicsBody": "Faculty ethics approval and written parental consent come before any recording.",
+    "ethicsLink": "Read our principles"
+  },
+  "privacy": {
+    "eyebrow": "Privacy & ethics",
+    "title": "Children's voices deserve the highest care.",
+    "intro": "These principles shape every screen and every line of code in Lisan.",
+    "principles": [
+      {
+        "title": "Consent first",
+        "body": "Written parental consent and faculty ethics approval before any recording. Research use is a separate, optional consent."
+      },
+      {
+        "title": "Store as little as possible",
+        "body": "Anonymous child IDs. No unnecessary personal data."
+      },
+      {
+        "title": "Encrypted and deletable",
+        "body": "Recordings are encrypted at rest and parents can delete them at any time from settings."
+      },
+      {
+        "title": "Never a diagnosis",
+        "body": "Every report says “screening result — confirm with a speech therapist”."
+      },
+      {
+        "title": "Safety escalations",
+        "body": "Severe and lateral lisps always trigger a “see a therapist” recommendation."
+      },
+      {
+        "title": "A bounded AI guide",
+        "body": "The AI agent only talks about speech practice and speaks to children through therapist-approved scripts."
+      }
+    ],
+    "contact": "Questions about your data? Contact the team."
+  }
+}

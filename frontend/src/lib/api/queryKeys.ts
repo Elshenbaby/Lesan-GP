@@ -1,0 +1,20 @@
+/** Central React Query keys so invalidation stays consistent across features. */
+export const qk = {
+  me: ['me'] as const,
+  guides: ['guides'] as const,
+  children: ['children'] as const,
+  child: (id: string) => ['children', id] as const,
+  rewards: (id: string) => ['children', id, 'rewards'] as const,
+  progress: (id: string) => ['children', id, 'progress'] as const,
+  sessions: (id: string) => ['children', id, 'sessions'] as const,
+  childRecordings: (id: string) => ['children', id, 'recordings'] as const,
+  screening: (id: string) => ['screenings', id] as const,
+  plan: (id: string) => ['plans', id] as const,
+  quests: (childId: string) => ['children', childId, 'quests'] as const,
+  quest: (id: string) => ['quests', id] as const,
+  patients: ['clinic', 'patients'] as const,
+  patient: (id: string) => ['clinic', 'patients', id] as const,
+  reviewQueue: ['clinic', 'recordings'] as const,
+  notes: ['clinic', 'notes'] as const,
+  invites: ['clinic', 'invites'] as const,
+}

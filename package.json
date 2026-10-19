@@ -1,0 +1,31 @@
+{
+  "name": "lisan",
+  "private": true,
+  "description": "Lisan — AI speech coach for children with lisps (Egyptian Arabic first).",
+  "packageManager": "pnpm@9.15.9",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "pnpm --filter @lisan/frontend dev",
+    "build": "pnpm --filter @lisan/frontend build",
+    "lint": "pnpm --filter @lisan/frontend lint",
+    "typecheck": "pnpm --filter @lisan/frontend typecheck",
+    "test": "pnpm --filter @lisan/frontend test",
+    "format": "pnpm --filter @lisan/frontend format",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^15.2.10"
+  },
+  "lint-staged": {
+    "frontend/**/*.{ts,tsx}": [
+      "pnpm --filter @lisan/frontend exec eslint --fix",
+      "pnpm --filter @lisan/frontend exec prettier --write"
+    ],
+    "frontend/**/*.{css,json,md}": [
+      "pnpm --filter @lisan/frontend exec prettier --write"
+    ]
+  }
+}

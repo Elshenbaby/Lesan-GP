@@ -1,0 +1,126 @@
+{
+  "appName": "لسان",
+  "tagline": "مدرّب نطق ذكي للأصوات الصغيرة",
+  "nav": {
+    "home": "الرئيسية",
+    "howItWorks": "إزاي بيشتغل",
+    "freeCheck": "اختبار مجاني",
+    "forTherapists": "للأخصائيين",
+    "about": "عن المشروع",
+    "privacy": "الخصوصية والأخلاقيات",
+    "login": "تسجيل الدخول",
+    "signup": "إنشاء حساب",
+    "menu": "القائمة",
+    "close": "إغلاق",
+    "dashboard": "لوحتي",
+    "logout": "تسجيل الخروج",
+    "startCheck": "ابدأ الاختبار المجاني"
+  },
+  "actions": {
+    "continue": "كمّل",
+    "back": "رجوع",
+    "next": "التالي",
+    "save": "حفظ",
+    "saving": "بيتحفظ…",
+    "cancel": "إلغاء",
+    "confirm": "تأكيد",
+    "approve": "موافقة",
+    "edit": "تعديل",
+    "delete": "حذف",
+    "share": "مشاركة",
+    "send": "إرسال",
+    "play": "تشغيل",
+    "pause": "إيقاف",
+    "retry": "حاول تاني",
+    "viewAll": "عرض الكل",
+    "learnMore": "اعرف أكتر",
+    "getStarted": "يلا نبدأ",
+    "done": "تمام"
+  },
+  "language": {
+    "label": "اللغة",
+    "switchTo": "English"
+  },
+  "sound": {
+    "label": "الصوت",
+    "on": "شغّال",
+    "off": "مقفول"
+  },
+  "sounds": {
+    "س": "السين (س)",
+    "ز": "الزاي (ز)",
+    "ش": "الشين (ش)",
+    "ص": "الصاد (ص)"
+  },
+  "levels": {
+    "isolation": "الصوت لوحده",
+    "syllables": "مقاطع",
+    "words": "كلمات",
+    "phrases": "جُمل قصيرة",
+    "sentences": "جُمل",
+    "stories": "حواديت",
+    "conversation": "كلام حر"
+  },
+  "lispTypes": {
+    "correct": "صحيح",
+    "interdental": "بين الأسنان (اللسان بيطلع بين السنان)",
+    "dentalized": "سِنّي (اللسان على السنان)",
+    "lateral": "جانبي (الهوا بيطلع من الجناب)",
+    "palatal": "حَنَكي (اللسان لورا زيادة)"
+  },
+  "lispTypesShort": {
+    "correct": "صحيح",
+    "interdental": "بين الأسنان",
+    "dentalized": "سِنّي",
+    "lateral": "جانبي",
+    "palatal": "حَنَكي"
+  },
+  "severity": {
+    "typical": "طبيعي / بسيط",
+    "moderate": "متوسط",
+    "severe": "شديد"
+  },
+  "positions": {
+    "initial": "أول الكلمة",
+    "medial": "نص الكلمة",
+    "final": "آخر الكلمة",
+    "all": "كل المواضع"
+  },
+  "disclaimer": {
+    "screening": "نتيجة فحص مبدئي — لازم تتأكد مع أخصائي تخاطب. لسان مش بيدّي تشخيص طبي.",
+    "seeTherapist": "بننصح بزيارة أخصائي تخاطب بشكل مباشر."
+  },
+  "states": {
+    "loading": "بيحمّل…",
+    "error": "حصلت مشكلة.",
+    "empty": "لسه مفيش حاجة هنا.",
+    "notFound": "ملقيناش الصفحة دي.",
+    "offline": "شكلك مش متصل بالإنترنت."
+  },
+  "time": {
+    "minutes_zero": "{{count}} دقيقة",
+    "minutes_one": "دقيقة",
+    "minutes_two": "دقيقتين",
+    "minutes_few": "{{count}} دقايق",
+    "minutes_many": "{{count}} دقيقة",
+    "minutes_other": "{{count}} دقيقة",
+    "days_zero": "{{count}} يوم",
+    "days_one": "يوم",
+    "days_two": "يومين",
+    "days_few": "{{count}} أيام",
+    "days_many": "{{count}} يوم",
+    "days_other": "{{count}} يوم",
+    "weeks_zero": "{{count}} أسبوع",
+    "weeks_one": "أسبوع",
+    "weeks_two": "أسبوعين",
+    "weeks_few": "{{count}} أسابيع",
+    "weeks_many": "{{count}} أسبوع",
+    "weeks_other": "{{count}} أسبوع"
+  },
+  "footer": {
+    "rights": "© {{year}} لسان — مشروع تخرج.",
+    "madeWith": "مشروع تخرج، معمول بحب للأصوات الصغيرة.",
+    "contact": "تواصل معانا"
+  },
+  "mockBanner": "وضع تجريبي — البيانات محاكاة."
+}

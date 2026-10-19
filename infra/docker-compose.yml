@@ -1,0 +1,83 @@
+# Full local stack. From the repo root:
+#   cp .env.example .env
+#   docker compose -f infra/docker-compose.yml up --build
+name: lisan
+
+x-backend-env: &backend-env
+  env_file:
+    - path: ../.env
+      required: false
+  environment:
+    DATABASE_URL: postgres://${POSTGRES_USER:-lisan}:${POSTGRES_PASSWORD:-lisan}@db:5432/${POSTGRES_DB:-lisan}
+    REDIS_URL: redis://redis:6379/0
+    AI_SERVICE_URL: http://ai:8001
+    MEDIA_ROOT: /app/media
+
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-lisan}
+      POSTGRES_USER: ${POSTGRES_USER:-lisan}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-lisan}
+    volumes: [pgdata:/var/lib/postgresql/data]
+    ports: ["5432:5432"]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-lisan}"]
+      interval: 5s
+      retries: 10
+
+  redis:
+    image: redis:7-alpine
+    ports: ["6379:6379"]
+
+  backend:
+    build: ../backend
+    <<: *backend-env
+    command: >
+      sh -c "python manage.py migrate --noinput &&
+             python manage.py seed_demo &&
+             python manage.py runserver 0.0.0.0:8000"
+    volumes:
+      - ../backend:/app
+      - media:/app/media
+    ports: ["8000:8000"]
+    depends_on:
+      db: { condition: service_healthy }
+      redis: { condition: service_started }
+      ai: { condition: service_started }
+
+  worker:
+    build: ../backend
+    <<: *backend-env
+    command: celery -A config worker --beat -l info
+    volumes:
+      - ../backend:/app
+      - media:/app/media
+    depends_on:
+      db: { condition: service_healthy }
+      redis: { condition: service_started }
+
+  ai:
+    build: ../ai-service
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8001 --reload
+    volumes:
+      - ../ai-service:/app
+    ports: ["8001:8001"]
+
+  frontend:
+    build:
+      context: ..
+      dockerfile: frontend/Dockerfile
+    environment:
+      VITE_API_URL: http://localhost:8000/api/v1
+      VITE_USE_MOCKS: "false"
+    volumes:
+      - ../frontend/src:/app/frontend/src
+      - ../frontend/public:/app/frontend/public
+    ports: ["5173:5173"]
+    depends_on: [backend]
+
+volumes:
+  pgdata:
+  media:

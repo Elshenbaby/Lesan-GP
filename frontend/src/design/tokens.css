@@ -1,0 +1,83 @@
+/*
+ * Lisan design tokens.
+ * Palette and rhythm adapted from prendslair.ca: warm paper, rust accent, deep teal ink.
+ * Tailwind v4 turns every --color-* / --font-* / --radius-* here into utilities (bg-cream, font-display, ...).
+ */
+@theme {
+  --color-cream: #fcf7f1;
+  --color-sand: #efe8df;
+  --color-tan: #d7c4ab;
+  --color-tan-dark: #b9a183;
+  --color-rust: #bb4d34;
+  --color-rust-dark: #9c3d28;
+  --color-teal: #21393b;
+  --color-teal-soft: #2f4f52;
+  --color-sage: #58635d;
+  --color-ink: #1d1d1b;
+  --color-night: #171614;
+  --color-paper: #f4efe6;
+
+  /* Traffic-light statuses (muted to sit on paper) */
+  --color-ok: #5f8a63;
+  --color-ok-soft: #e3ecdf;
+  --color-warn: #d49a3a;
+  --color-warn-soft: #f6e9cf;
+  --color-alert: #bb4d34;
+  --color-alert-soft: #f3dcd4;
+
+  --font-display: 'Young Serif', 'Alexandria', Georgia, serif;
+  --font-sans: 'Manrope', 'IBM Plex Sans Arabic', 'Helvetica Neue', Arial, sans-serif;
+  --font-script: 'Caveat', 'Aref Ruqaa', cursive;
+
+  --radius-xs: 3px;
+  --radius-sm: 5px;
+  --radius-md: 10px;
+  --radius-lg: 18px;
+  --radius-card: 14px;
+
+  --ease-out-cubic: cubic-bezier(0.215, 0.61, 0.355, 1);
+  --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+
+  --shadow-card: 0 18px 40px -18px rgb(33 57 59 / 0.35), 0 2px 6px rgb(33 57 59 / 0.08);
+  --shadow-soft: 0 10px 30px -12px rgb(33 57 59 / 0.18);
+
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-pulse-ring: pulse-ring 1.6s var(--ease-out-cubic) infinite;
+  --animate-glow: glow 2.4s ease-in-out infinite;
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
+  @keyframes pulse-ring {
+    0% {
+      transform: scale(1);
+      opacity: 0.55;
+    }
+    100% {
+      transform: scale(1.9);
+      opacity: 0;
+    }
+  }
+  @keyframes glow {
+    0%,
+    100% {
+      box-shadow: 0 0 0 0 rgb(187 77 52 / 0.45);
+    }
+    50% {
+      box-shadow: 0 0 0 14px rgb(187 77 52 / 0);
+    }
+  }
+}
+
+/* Arabic uses Arabic-first font stacks */
+:root:lang(ar) {
+  --font-display: 'Alexandria', 'Young Serif', serif;
+  --font-sans: 'IBM Plex Sans Arabic', 'Manrope', sans-serif;
+  --font-script: 'Aref Ruqaa', 'Caveat', cursive;
+}

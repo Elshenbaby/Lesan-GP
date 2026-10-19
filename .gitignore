@@ -1,0 +1,42 @@
+# OS / editors
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# Env
+.env
+.env.*
+!.env.example
+
+# Node
+node_modules/
+dist/
+coverage/
+*.log
+.pnpm-store/
+*.tsbuildinfo
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.sqlite3
+staticfiles/
+media/
+.test-media/
+
+# AI artefacts (never commit audio or weights)
+ai-service/models/*
+!ai-service/models/.gitkeep
+ai-service/data/*
+!ai-service/data/.gitkeep
+*.wav
+*.webm
+*.pt
+*.onnx

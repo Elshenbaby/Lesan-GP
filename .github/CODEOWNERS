@@ -1,0 +1,17 @@
+# Replace the placeholder handles with real GitHub usernames.
+# Roles follow the team split in the proposal.
+
+*                       @lisan-team/leads
+
+/frontend/              @frontend-lead
+/frontend/src/features/child/   @frontend-lead @ux-clinical-lead
+/frontend/src/i18n/     @frontend-lead @ux-clinical-lead
+
+/backend/               @backend-lead
+/backend/apps/plans/    @backend-lead @ux-clinical-lead
+
+/ai-service/            @ai-speech-lead
+/ai-service/agent/      @agent-data-lead
+
+/infra/                 @backend-lead
+/docs/                  @lisan-team/leads

@@ -1,0 +1,126 @@
+import type { ScreeningWord } from '@/types/domain'
+
+/**
+ * MVP screening list: س and ز in initial / medial / final positions, everyday Egyptian words.
+ * The clinical lead owns this list; the real one is served by the backend.
+ */
+export const screeningWords: ScreeningWord[] = [
+  {
+    id: 'w1',
+    word: 'سمكة',
+    transliteration: 'samaka',
+    meaningEn: 'fish',
+    targetSound: 'س',
+    position: 'initial',
+    picture: 'fish',
+  },
+  {
+    id: 'w2',
+    word: 'ساعة',
+    transliteration: 'sāʿa',
+    meaningEn: 'clock',
+    targetSound: 'س',
+    position: 'initial',
+    picture: 'clock',
+  },
+  {
+    id: 'w3',
+    word: 'سيارة',
+    transliteration: 'sayyāra',
+    meaningEn: 'car',
+    targetSound: 'س',
+    position: 'initial',
+    picture: 'car',
+  },
+  {
+    id: 'w4',
+    word: 'كرسي',
+    transliteration: 'korsi',
+    meaningEn: 'chair',
+    targetSound: 'س',
+    position: 'medial',
+    picture: 'chair',
+  },
+  {
+    id: 'w5',
+    word: 'بسكوتة',
+    transliteration: 'baskota',
+    meaningEn: 'biscuit',
+    targetSound: 'س',
+    position: 'medial',
+    picture: 'cookie',
+  },
+  {
+    id: 'w6',
+    word: 'شمس',
+    transliteration: 'shams',
+    meaningEn: 'sun',
+    targetSound: 'س',
+    position: 'final',
+    picture: 'sun',
+  },
+  {
+    id: 'w7',
+    word: 'فانوس',
+    transliteration: 'fanoos',
+    meaningEn: 'lantern',
+    targetSound: 'س',
+    position: 'final',
+    picture: 'lantern',
+  },
+  {
+    id: 'w8',
+    word: 'أتوبيس',
+    transliteration: 'otobees',
+    meaningEn: 'bus',
+    targetSound: 'س',
+    position: 'final',
+    picture: 'bus',
+  },
+  {
+    id: 'w9',
+    word: 'زهرة',
+    transliteration: 'zahra',
+    meaningEn: 'flower',
+    targetSound: 'ز',
+    position: 'initial',
+    picture: 'flower',
+  },
+  {
+    id: 'w10',
+    word: 'بيتزا',
+    transliteration: 'pizza',
+    meaningEn: 'pizza',
+    targetSound: 'ز',
+    position: 'medial',
+    picture: 'pizza',
+  },
+  {
+    id: 'w11',
+    word: 'موز',
+    transliteration: 'mooz',
+    meaningEn: 'banana',
+    targetSound: 'ز',
+    position: 'final',
+    picture: 'banana',
+  },
+]
+export const syllablePrompts: ScreeningWord[] = ['سا', 'سو', 'سي', 'اس'].map((s, i) => ({
+  id: `syl-${i}`,
+  word: s,
+  transliteration: ['sa', 'su', 'si', 'as'][i],
+  meaningEn: 'syllable',
+  targetSound: 'س',
+  position: i === 3 ? 'final' : 'initial',
+  picture: 'wind',
+}))
+
+export const isolationPrompt: ScreeningWord = {
+  id: 'iso-s',
+  word: 'سسسس',
+  transliteration: 'ssss',
+  meaningEn: 'snake sound',
+  targetSound: 'س',
+  position: 'initial',
+  picture: 'wind',
+}

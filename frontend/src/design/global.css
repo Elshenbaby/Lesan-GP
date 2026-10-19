@@ -1,0 +1,116 @@
+@import 'tailwindcss';
+@import './tokens.css';
+
+@custom-variant dark (&:where([data-theme='dark'], [data-theme='dark'] *));
+
+@layer base {
+  html {
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+  @media (min-width: 1200px) {
+    html {
+      font-size: 16px;
+    }
+  }
+  @media (min-width: 1600px) {
+    html {
+      font-size: 17px;
+    }
+  }
+
+  body {
+    @apply bg-sand text-teal font-sans;
+    min-height: 100dvh;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display;
+    line-height: 1.1;
+    font-weight: 400;
+  }
+  :lang(ar) h1,
+  :lang(ar) h2,
+  :lang(ar) h3,
+  :lang(ar) h4 {
+    font-weight: 600;
+    line-height: 1.35;
+  }
+
+  ::selection {
+    @apply bg-rust text-cream;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-rust);
+    outline-offset: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* Signature hover from the reference: a skewed wash rising from the bottom. */
+  .hover-wash {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+  }
+  .hover-wash::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-color: currentColor;
+    opacity: 0;
+    transform-origin: top left;
+    transform: translate3d(0, 100%, 0) skewY(15deg);
+    transition:
+      transform 0.5s var(--ease-out-cubic),
+      opacity 0.5s var(--ease-out-cubic);
+  }
+  .hover-wash:hover::before,
+  .hover-wash:focus-visible::before {
+    transform: translate3d(0, 0, 0);
+    opacity: 0.08;
+  }
+
+  .paper-grain {
+    background-image:
+      radial-gradient(circle at 20% 10%, rgb(255 255 255 / 0.5), transparent 40%),
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.13 0 0 0 0 0.22 0 0 0 0 0.23 0 0 0 0.05 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  .eyebrow {
+    @apply text-sage text-xs font-semibold tracking-[0.18em] uppercase;
+  }
+  :lang(ar) .eyebrow {
+    letter-spacing: 0;
+    @apply text-sm;
+  }
+
+  .container-page {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-12;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .flip-x-rtl:dir(rtl) {
+    transform: scaleX(-1);
+  }
+}

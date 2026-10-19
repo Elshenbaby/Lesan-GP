@@ -1,0 +1,104 @@
+{
+  "exit": "Grown-ups",
+  "gate": {
+    "title": "Grown-ups only",
+    "body": "Solve this to leave the game.",
+    "wrong": "Not quite — try again."
+  },
+  "handover": {
+    "eyebrow": "Child mode",
+    "title": "Now let {{name}} play",
+    "body": "Hand over the device and sit nearby. Keep the sound on — the guide talks. No need to help with the answers.",
+    "soundHint": "Keep the sound on<br>for the best experience",
+    "start": "Start"
+  },
+  "guide": {
+    "title": "Who do you want to explore with?",
+    "choose": "Choose {{name}}",
+    "species": { "snake": "Snake", "bee": "Bee", "owl": "Owl", "fox": "Fox" },
+    "loves": "Loves the {{sound}} sound"
+  },
+  "world": {
+    "intro": "Hi! I'm {{guide}}. I'll be your guide on our adventure.",
+    "introScreening": "First, let's visit the oasis and play the picture game!",
+    "today": "Today's quest is waiting. Tap the glowing spot!",
+    "allDone": "You finished today's quest. See you tomorrow, explorer!",
+    "rewards": "My stars",
+    "screeningPin": "Picture game",
+    "locations": {
+      "isolation": "The Oasis",
+      "syllables": "Palm Grove",
+      "words": "The Market",
+      "phrases": "The Nile",
+      "sentences": "Old Town",
+      "stories": "Story Tent",
+      "conversation": "The Pyramid"
+    },
+    "todayBadge": "Today"
+  },
+  "screening": {
+    "splash": "Picture adventure",
+    "splashSub": "Let's play",
+    "intro": "I'll show you pictures. Tell me what you see!",
+    "prompt": "What is this?",
+    "listening": "I'm listening…",
+    "again": "Oops, I didn't hear well. Say it again?",
+    "nice": ["Great try!", "Lovely!", "Super!", "Well said!", "Yay!"],
+    "noMic": "No microphone? Tap here to continue",
+    "doneTitle": "Amazing adventure!",
+    "doneBody": "You earned {{count}} stars. Now give the device back to your grown-up.",
+    "toMap": "Back to the map"
+  },
+  "quest": {
+    "splashSub": "Today's quest",
+    "steps": { "warmup": "Warm-up", "sound": "Sound", "word": "Words", "story": "Story" },
+    "warmupIntro": "Let's warm up! Breathe with me.",
+    "breathe": {
+      "inhale": "Breathe in for 4 seconds",
+      "hold": "Hold for 4 seconds",
+      "exhale": "Breathe out slowly: sssssss"
+    },
+    "soundIntro": "Hide your tongue behind your teeth and say a long “sssss” like me!",
+    "wordIntro": "Now let's say the words!",
+    "correct": ["Perfect sss!", "Wow, just like {{guide}}!", "You did it!", "That was great!"],
+    "retry": {
+      "interdental": "Let's try with teeth closed — tongue hiding inside.",
+      "dentalized": "Pull your tongue back a tiny bit, behind the teeth.",
+      "lateral": "Let the air go out of the middle, like a straw.",
+      "palatal": "Bring your tongue a little forward, near the teeth.",
+      "correct": "Let's try once more!"
+    },
+    "listen": "Listen: {{word}}",
+    "tap": "Tap the mic and say it",
+    "skip": "Next",
+    "doneTitle": "Quest complete!",
+    "doneBody": "You earned {{count}} stars. {{guide}} is so proud of you!",
+    "toMap": "Back to the map"
+  },
+  "rewards": {
+    "title": "My treasure",
+    "stars": "Stars",
+    "streak": "Days in a row",
+    "calendar": "My practice days",
+    "stickers": "Stickers",
+    "outfits": "Outfits for {{guide}}",
+    "equip": "Wear",
+    "equipped": "Wearing",
+    "locked": "Keep practising to unlock",
+    "back": "Back to the map",
+    "names": {
+      "first_hiss": "First hiss",
+      "three_days": "3 days",
+      "word_explorer": "Word explorer",
+      "five_days": "5 days",
+      "phrase_climber": "Phrase climber",
+      "story_teller": "Story teller",
+      "summit": "Summit",
+      "graduate": "Graduate",
+      "explorer_hat": "Explorer hat",
+      "scarf": "Scarf",
+      "backpack": "Backpack",
+      "crown": "Crown"
+    }
+  }
+}

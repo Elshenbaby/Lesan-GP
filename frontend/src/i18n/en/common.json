@@ -1,0 +1,114 @@
+{
+  "appName": "Lisan",
+  "tagline": "AI speech coach for little voices",
+  "nav": {
+    "home": "Home",
+    "howItWorks": "How it works",
+    "freeCheck": "Free lisp check",
+    "forTherapists": "For therapists",
+    "about": "About",
+    "privacy": "Privacy & ethics",
+    "login": "Log in",
+    "signup": "Sign up",
+    "menu": "Menu",
+    "close": "Close",
+    "dashboard": "My dashboard",
+    "logout": "Log out",
+    "startCheck": "Start free check"
+  },
+  "actions": {
+    "continue": "Continue",
+    "back": "Back",
+    "next": "Next",
+    "save": "Save",
+    "saving": "Saving…",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "approve": "Approve",
+    "edit": "Edit",
+    "delete": "Delete",
+    "share": "Share",
+    "send": "Send",
+    "play": "Play",
+    "pause": "Pause",
+    "retry": "Try again",
+    "viewAll": "View all",
+    "learnMore": "Learn more",
+    "getStarted": "Get started",
+    "done": "Done"
+  },
+  "language": {
+    "label": "Language",
+    "switchTo": "العربية"
+  },
+  "sound": {
+    "label": "Sound",
+    "on": "On",
+    "off": "Off"
+  },
+  "sounds": {
+    "س": "S (س)",
+    "ز": "Z (ز)",
+    "ش": "Sh (ش)",
+    "ص": "Emphatic S (ص)"
+  },
+  "levels": {
+    "isolation": "Sound alone",
+    "syllables": "Syllables",
+    "words": "Words",
+    "phrases": "Phrases",
+    "sentences": "Sentences",
+    "stories": "Stories",
+    "conversation": "Conversation"
+  },
+  "lispTypes": {
+    "correct": "Correct",
+    "interdental": "Interdental (tongue between teeth)",
+    "dentalized": "Dentalized (tongue on teeth)",
+    "lateral": "Lateral (air escapes at the sides)",
+    "palatal": "Palatal (tongue too far back)"
+  },
+  "lispTypesShort": {
+    "correct": "Correct",
+    "interdental": "Interdental",
+    "dentalized": "Dentalized",
+    "lateral": "Lateral",
+    "palatal": "Palatal"
+  },
+  "severity": {
+    "typical": "Typical / mild",
+    "moderate": "Moderate",
+    "severe": "Severe"
+  },
+  "positions": {
+    "initial": "Start of word",
+    "medial": "Middle of word",
+    "final": "End of word",
+    "all": "All positions"
+  },
+  "disclaimer": {
+    "screening": "Screening result — confirm with a speech therapist. Lisan does not give a medical diagnosis.",
+    "seeTherapist": "We recommend seeing a speech therapist in person."
+  },
+  "states": {
+    "loading": "Loading…",
+    "error": "Something went wrong.",
+    "empty": "Nothing here yet.",
+    "notFound": "We couldn't find that page.",
+    "offline": "You seem to be offline."
+  },
+  "time": {
+    "minutes_one": "{{count}} minute",
+    "minutes_other": "{{count}} minutes",
+    "days_one": "{{count}} day",
+    "days_other": "{{count}} days",
+    "weeks_one": "{{count}} week",
+    "weeks_other": "{{count}} weeks"
+  },
+  "footer": {
+    "rights": "© {{year}} Lisan — graduation project.",
+    "madeWith": "A graduation project, made with care for little voices.",
+    "contact": "Contact"
+  },
+  "mockBanner": "Demo mode — data is simulated."
+}

@@ -1,0 +1,11 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  },
+  "typescript.tsdk": "frontend/node_modules/typescript/lib",
+  "i18n-ally.localesPaths": ["frontend/src/i18n"],
+  "i18n-ally.keystyle": "nested",
+  "i18n-ally.sourceLanguage": "ar"
+}

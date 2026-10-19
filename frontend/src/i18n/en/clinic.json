@@ -1,0 +1,110 @@
+{
+  "surface": "Therapist dashboard",
+  "nav": {
+    "patients": "Patients",
+    "review": "Review queue",
+    "notes": "Notes",
+    "invites": "Invites"
+  },
+  "patients": {
+    "eyebrow": "Caseload",
+    "title": "Your patients",
+    "description": "Everyone sharing their practice with you. Stuck patients need a look first.",
+    "search": "Search by child or parent",
+    "filters": {
+      "all": "All",
+      "practicing": "Practicing",
+      "stuck": "Stuck",
+      "ready": "Ready to level up",
+      "inactive": "Inactive"
+    },
+    "columns": {
+      "child": "Child",
+      "level": "Level",
+      "type": "Lisp type",
+      "accuracy": "Accuracy",
+      "last": "Last session",
+      "reviews": "To review"
+    },
+    "parent": "Parent: {{name}}",
+    "never": "Never",
+    "empty": "No patients match this filter.",
+    "pendingPlan": "Plan awaiting approval"
+  },
+  "patient": {
+    "eyebrow": "Patient",
+    "age": "{{age}} years · parent {{parent}}",
+    "editPlan": "Edit plan",
+    "progress": "Progress",
+    "noProgress": "No practice data yet.",
+    "recordings": "Recent recordings",
+    "noRecordings": "No recordings.",
+    "notes": "Notes",
+    "addNote": "Add a note",
+    "notePlaceholder": "Observation, cue that worked, next step…",
+    "noteSaved": "Note saved",
+    "delta": "{{value}} pts this week",
+    "status": "Status"
+  },
+  "review": {
+    "eyebrow": "Human in the loop",
+    "title": "Review queue",
+    "description": "Confirm or correct the AI's label. Every review improves the model and keeps parents' reports honest.",
+    "empty": "All caught up — nothing to review.",
+    "ai": "AI label",
+    "confidence": "Confidence",
+    "lowConfidence": "Low confidence",
+    "agree": "Agree",
+    "change": "Change label",
+    "choose": "Choose the correct label",
+    "saved": "Label saved",
+    "word": "Word",
+    "remaining": "{{count}} left"
+  },
+  "plan": {
+    "eyebrow": "Plan editor",
+    "title": "{{child}}'s plan",
+    "none": "This patient has no plan yet. It's generated after the screening.",
+    "targets": "Target sounds",
+    "pace": "Minutes per day",
+    "duration": "Duration (weeks)",
+    "reassess": "Re-assess every (weeks)",
+    "level": "Current level",
+    "levelHint": "Overrides the automatic ladder. Only therapists can skip levels.",
+    "sound": "Current sound",
+    "notes": "Notes for the family",
+    "save": "Save changes",
+    "approve": "Approve & activate",
+    "saved": "Plan updated",
+    "approved": "Plan approved and active"
+  },
+  "invites": {
+    "eyebrow": "Connections",
+    "title": "Invites",
+    "description": "Families share a child with you, or you invite a family to Lisan.",
+    "send": "Invite a family",
+    "email": "Parent's email",
+    "sent": "Invite sent",
+    "incoming": "Incoming",
+    "outgoing": "Sent",
+    "accept": "Accept",
+    "decline": "Decline",
+    "status": {
+      "pending": "Pending",
+      "accepted": "Accepted",
+      "declined": "Declined"
+    },
+    "empty": "No invites yet.",
+    "for": "for {{child}}"
+  },
+  "notes": {
+    "eyebrow": "Clinical notes",
+    "title": "Notes",
+    "description": "Your observations across all patients.",
+    "new": "New note",
+    "patient": "Patient",
+    "body": "Note",
+    "save": "Save note",
+    "empty": "No notes yet."
+  }
+}
